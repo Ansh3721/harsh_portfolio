@@ -1,71 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harsh Mishra | Voice Artist Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Mishra - Professional Voice Artist</title>
+    <meta name="description" content="Professional voice artist specializing in commercials, narration, character voices, and mimicry.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="hero-section">
-    <div class="container">
-      <img src="photos/Harsh picture.jpg" alt="Harsh Mishra" class="profile-pic">
-        <div class="name-section">
-        <div class="name" style="font-style: italic;">Harsh Mishra</div>
-          <hr class="hero-divider">
-          <div class="dynamic-roles">
-          <span id="animated-role" class="animated-role" style="color: #fff; font-weight: 900; font-size: 3rem;"></span>
-        </div>
-      </div>
-      <div class="rotating-skills" id="rotatingSkills">
-        <!-- Skills will be injected here -->
-      </div>
-      <div class="about-box">
-        <div class="about-label">ABOUT ME</div>
-        <div class="about-me" id="aboutMe">
-          Hello everyone this harsh mishra a voice artist. It will be interesting to work with you so just contact me and do an extraordinary thing.
-        </div>
-        <button class="contact-btn" onclick="scrollToContact()">Contact Details</button>
-      </div>
-    </div>
-  </section>
-  <section class="main-content">
-    <button class="mimicry-btn" id="mimicryBtn">MIMICRY</button>
-    <div class="mimicry-list " id="mimicryList" style="display:none;">
-      <!-- Actor list will be injected here by JS -->
-  </div>
-    <button class="emotion-btn" id="emotionBtn">ALL EMOTION VOICES</button>
-    <div class="emotion-list" id="emotionList" style="display:none;"></div>
-    <section class="contact-section">
-      <h2>Contact Details</h2>
-      <div class="contact-box">
-        <div class="contact-info">
-          <p><i class="fas fa-phone"></i> +91 9324830735</p>
-          <p><i class="fas fa-envelope"></i> harshmishra37221@gmail.com</p>
-          <p><i class="fas fa-map-marker-alt"></i> Mumbai</p>
-        </div>
-        <div class="social-links">
-          <a href="https://instagram.com/_harsh.164" target="_blank" title="Instagram" class="social-link">
-            <svg width="40" height="40" viewBox="0 0 448 448" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <radialGradient id="insta-gradient" cx="0.5" cy="0.5" r="0.8">
-                  <stop offset="0%" stop-color="#fdf497"/>
-                  <stop offset="25%" stop-color="#fdf497"/>
-                  <stop offset="50%" stop-color="#fd5949"/>
-                  <stop offset="75%" stop-color="#d6249f"/>
-                  <stop offset="100%" stop-color="#285AEB"/>
-                </radialGradient>
-              </defs>
-              <rect width="448" height="448" rx="90" fill="url(#insta-gradient)"/>
-              <path d="M224 144c-44.1 0-80 35.9-80 80s35.9 80 80 80 80-35.9 80-80-35.9-80-80-80zm0 132c-28.7 0-52-23.3-52-52s23.3-52 52-52 52 23.3 52 52-23.3 52-52 52zm85-136c0 10.5-8.5 19-19 19s-19-8.5-19-19 8.5-19 19-19 19 8.5 19 19zm49 19.2c-1.1-23.2-6.4-43.7-23.4-60.7S343.2 62.1 320 61c-23.2-1.1-92.8-1.1-116 0-23.2 1.1-43.7 6.4-60.7 23.4S62.1 104.8 61 128c-1.1 23.2-1.1 92.8 0 116 1.1 23.2 6.4 43.7 23.4 60.7s37.5 22.3 60.7 23.4c23.2 1.1 92.8 1.1 116 0 23.2-1.1 43.7-6.4 60.7-23.4s22.3-37.5 23.4-60.7c1.1-23.2 1.1-92.8 0-116zm-34.2 141.5c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.6 0-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2 0-132.6 7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.6 0 19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 0 132.6z" fill="#fff"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-  </section>
-  <script src="script.js"></script>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                </div>
+                <span class="logo-text font-display">Harsh Mishra</span>
+            </div>
 
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#mimicry">Mimicry</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary hidden-mobile">Hire Me</a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#mimicry">Mimicry</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="btn btn-primary" style="margin: 1rem;">Hire Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                    Professional Voice Artist
+                </div>
+                <h1 class="font-display">
+                    Bringing Your <span class="gradient-text">Stories</span> to Life
+                </h1>
+                <p>
+                    Professional voice artist with years of experience in commercials, narration, character voices, and celebrity mimicry.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#mimicry" class="btn btn-primary">Listen to Demos</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?w=400&h=400&fit=crop" alt="Harsh Mishra - Voice Artist">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <span style="color: hsl(var(--primary)); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem;">About Me</span>
+                <h2 class="font-display">The Voice Behind the Mic</h2>
+                <p>
+                    I'm Harsh Mishra, a professional voice artist with a passion for bringing scripts to life. With years of experience in the industry, I've had the privilege of working with brands, production houses, and content creators worldwide.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                        <span>Professional Recording</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>Quick Turnaround</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+                        <span>Custom Scripts</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        <span>Passionate Delivery</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+            </div>
+            <div class="about-image">
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=350&h=400&fit=crop" alt="Recording Studio">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mimicry Section -->
+    <section class="mimicry" id="mimicry">
+        <div class="container">
+            <div class="section-header">
+                <span>Voice Impressions</span>
+                <h2 class="font-display">Celebrity Mimicry</h2>
+            </div>
+
+            <div class="mimicry-toggle">
+                <button class="btn btn-primary" id="mimicryToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;"><circle cx="12" cy="18" r="4"/><path d="M12 2v10"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m16 6-4 4-4-4"/></svg>
+                    Show Mimicry
+                </button>
+            </div>
+
+            <div class="mimicry-grid" id="mimicryGrid">
+                <!-- Actor cards will be generated by JS -->
+            </div>
+
+            <div class="cta-box">
+                <h3 class="font-display">Want a Custom Voice?</h3>
+                <p>I can create unique character voices for your project. Let's discuss your requirements!</p>
+                <a href="#contact" class="btn btn-primary">Request Custom Voice</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span>What I Offer</span>
+                <h2 class="font-display">My Services</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                    </div>
+                    <h3 class="font-display">Commercial Voiceovers</h3>
+                    <p>Professional voice for TV, radio, and digital advertisements that capture attention and drive action.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10s3-3 3-8"/><path d="M22 10s-3-3-3-8"/><path d="M10 2c0 4.4-3.6 8-8 8"/><path d="M14 2c0 4.4 3.6 8 8 8"/><path d="M2 10s2 2 2 5"/><path d="M22 10s-2 2-2 5"/><path d="M8 15h8"/><path d="M2 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/><path d="M14 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/></svg>
+                    </div>
+                    <h3 class="font-display">Celebrity Mimicry</h3>
+                    <p>Spot-on impressions of famous personalities for entertainment, parodies, and special projects.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                    </div>
+                    <h3 class="font-display">Narration</h3>
+                    <p>Engaging storytelling for documentaries, audiobooks, e-learning, and corporate presentations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                    </div>
+                    <h3 class="font-display">Character Voices</h3>
+                    <p>Unique character voices for animations, video games, and theatrical productions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12"/><path d="M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928.882-5.226 2.297"/><path d="M16.5 2.826C15.5 3.5 14.372 4 13 4 10.942 4 9.072 3.118 7.774 1.703"/><path d="M18 15.5V2.1"/><path d="M22 13h-7.5"/></svg>
+                    </div>
+                    <h3 class="font-display">Dubbing</h3>
+                    <p>Professional dubbing services for films, TV shows, and international content localization.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                    </div>
+                    <h3 class="font-display">Podcast Production</h3>
+                    <p>Complete podcast voice services including intros, outros, and episode narration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span>Get in Touch</span>
+                <h2 class="font-display">Contact Me</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="font-display">Let's Create Something Amazing</h3>
+                    <p>Have a project in mind? I'd love to hear about it. Reach out and let's discuss how I can bring your vision to life.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <span>Phone</span>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <span>Email</span>
+                            <a href="mailto:harsh@voiceartist.com">harsh@voiceartist.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <span>Location</span>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                </div>
+                <span class="logo-text font-display">Harsh Mishra</span>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                </a>
+            </div>
+
+            <p>© <span id="year"></span> Harsh Mishra. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
